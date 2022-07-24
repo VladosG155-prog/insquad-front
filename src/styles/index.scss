@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    background: #707394;
+    padding: 0px 130px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1; 
+}
+svg path{
+    transition: .3s all ease-in-out;
+}
+.d-flex{
+    display: flex;
+}
+@media screen and (max-width: 1100px) {
+    body{
+        padding: 0px;
+    }
+}

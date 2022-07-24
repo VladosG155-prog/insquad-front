@@ -1,0 +1,58 @@
+.root{
+    width: 70%;
+}
+.title{
+    font-family: 'Cabin';
+    font-size: 20px;
+    color: #1B1B1B;
+}
+.header{
+    & h3{
+        margin-right: 10px;
+    }
+}
+.section{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    & p{
+        margin-bottom: 10px;
+    }
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    & span{
+        background: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        border-radius: 12px;
+        width: 20%;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        & i{
+            margin-right: 10px;
+        }
+    }
+}
+.wrapExp{
+    margin-top: 10px;
+    & span{
+        font-size: 16px;
+        color: #1B1B1B;
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .root{
+        width: 100%;
+    }
+    .wrap{
+        & span{
+            width: 46%;
+            font-size: 12px;
+            padding: 8px 10px;
+        }
+    }
+}

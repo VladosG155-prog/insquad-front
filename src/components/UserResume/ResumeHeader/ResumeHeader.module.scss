@@ -1,0 +1,72 @@
+.header{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.info{
+    margin-left: 30px;
+    flex: 1 0 70%;
+}
+.infoHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.userInfo{
+    & h2{
+        font-family: 'Cabin';
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
+.buttons{
+    display: flex;
+    align-items: flex-end;
+    & button{
+        &:last-child{
+            margin-left: 20px;
+        }
+    }
+}
+.infoWrapper{
+    display: flex;
+    & img{
+        border-radius: 20px;
+    }
+}
+.param{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    & span{
+        color: #1B1B1B;
+        margin-left: 10px;
+    }
+}
+.description{
+    line-height: 20px;
+    color: #1B1B1B;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .header{
+        flex-direction: column;
+    }
+    .info{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .infoWrapper{
+        flex-direction: column;
+        & img{
+            width: 50%;
+            max-width: 180px;
+            height: auto;
+        }
+    }
+    .description{
+        margin-bottom: 20px;
+    }
+}

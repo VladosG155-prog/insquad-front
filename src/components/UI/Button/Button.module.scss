@@ -1,0 +1,45 @@
+.button{
+    background: none;
+    padding: 0px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    min-height: 40px;
+    justify-content: center;
+    transition: .3s all ease-in-out;
+    & i{
+        margin-right: 5px;
+    }
+    &[data-size="small"]{
+        width: 110px;
+    }
+    &[data-size="medium"]{
+        width: 140px;
+    }
+    &[data-size="big"]{
+        width: 160px;
+    }
+}
+.outlined{
+    border: 1px solid #373AF5;
+    color: #373AF5;
+    &:hover{
+        color: #fff;
+        background: #373AF5;
+       & i svg path{
+        stroke: #fff;
+       }
+    }
+}
+.filled{
+    background: #373AF5;
+    color: #fff;
+    border: 1px solid #373AF5;
+    &:hover{
+        background: #fff;
+        color: #373AF5;
+    }
+}
